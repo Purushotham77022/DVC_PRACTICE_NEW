@@ -1,4 +1,5 @@
 [core]
-    remote = awsremote
-['remote "awsremote"']
-    url = s3://practicedvc
+    remote = dvcstore
+['remote "dvcstore"']
+    url = s3://practicedvc/dvcstore
+    region = ap-south-1
