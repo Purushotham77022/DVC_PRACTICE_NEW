@@ -8,6 +8,9 @@ df = pd.DataFrame({
     "City": ["New York", "Los Angeles", "Chicago", "Houston", "Phoenix"]
 })
 
+new_row = {"Name": "Frank", "Age": 29, "City": "San Francisco"}
+df = pd.concat([df, pd.DataFrame([new_row])], ignore_index=True)
+
 folder_path = "./data"
 os.makedirs(folder_path,exist_ok= True)
 
